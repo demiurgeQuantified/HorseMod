@@ -2,6 +2,7 @@ module HorseMod {
     animationsMesh Horse {
         meshFile = HorseMod/Horse,
         animationDirectory = Horse,
+        animationPrefix = Horse_,
     }
 
     model Horse {

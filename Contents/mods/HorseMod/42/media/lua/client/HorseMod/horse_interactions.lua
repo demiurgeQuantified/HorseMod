@@ -4,11 +4,14 @@ local HorseRiding = require("HorseMod/HorseRiding")
 ---@param context ISContextMenu
 ---@param animal IsoAnimal
 local doHorseInteractionMenu = function(context, player, animal)
-    if HorseRiding.isMountableHorse(animal) then
-        -- FIXME: currently we set this variable here because animations are still in testing
-        -- we should detect when a horse spawns and apply this immediately
-        animal:setVariable("isHorse", true)
+    local animalType = animal:getAnimalType()
+    if animalType ~= "stallion" and animalType ~= "mare" then
+        return
     end
+
+    -- FIXME: currently we set this variable here because animations are still in testing
+    -- we should detect when a horse spawns and apply this immediately
+    animal:setVariable("isHorse", true)
 end
 
 ---@type Callback_OnClickedAnimalForContext

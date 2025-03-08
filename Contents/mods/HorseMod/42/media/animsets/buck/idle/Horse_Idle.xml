@@ -1,17 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <animNode>
-	<m_Name>Horse_Idle</m_Name>
-	<m_AnimName>Bip01Action</m_AnimName>
-	<m_ConditionPriority>10</m_ConditionPriority>
-	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
-	<m_BlendTime>0.40</m_BlendTime>
-	<m_Transitions>
-		<m_Target>idleSit</m_Target>
-		<m_AnimName>DeerStag_IdleToSitting</m_AnimName>
-	</m_Transitions>
-	<m_Conditions>
-		<m_Name>isHorse</m_Name>
-		<m_Type>BOOL</m_Type>
-		<m_Value>true</m_Value>
-	</m_Conditions>
+    <m_Name>Horse_Idle</m_Name>
+    <m_AnimName>Horse_Idle</m_AnimName>
+    <m_ConditionPriority>10</m_ConditionPriority>
+
+    <m_deferredBoneAxis>Y</m_deferredBoneAxis>
+    <m_BlendTime>0.40</m_BlendTime>
+
+    <m_Conditions>
+        <m_Name>isHorse</m_Name>
+        <m_Type>BOOL</m_Type>
+        <m_Value>true</m_Value>
+    </m_Conditions>
+
+    <m_Transitions>
+        <m_Target>idleSit</m_Target>
+        <m_AnimName>DeerStag_IdleToSitting</m_AnimName>
+    </m_Transitions>
 </animNode>
