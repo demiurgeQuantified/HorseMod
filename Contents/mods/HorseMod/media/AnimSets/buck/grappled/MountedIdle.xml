@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="../GrappledDefault.xml">
+    <m_Name>MountedIdle</m_Name>
+    <m_AnimName>Bip01Action</m_AnimName>
+</animNode>
