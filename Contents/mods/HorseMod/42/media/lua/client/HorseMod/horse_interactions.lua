@@ -8,6 +8,8 @@ local doHorseInteractionMenu = function(context, player, animal)
         -- FIXME: currently we set this variable here because animations are still in testing
         -- we should detect when a horse spawns and apply this immediately
         animal:setVariable("isHorse", true)
+        context:addOption("IGUI_HorseMod_MountHorse",
+                          player, HorseRiding.mountHorse, animal)
     end
 end
 
