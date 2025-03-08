@@ -1,0 +1,13 @@
+module HorseMod {
+    animationsMesh Horse {
+        meshFile = HorseMod/Horse,
+        animationDirectory = Horse,
+    }
+
+    model Horse {
+        mesh = HorseMod/Horse,
+        animationsMesh = HorseMod.Horse,
+        shader = animalEffect,
+        static = false,
+    }
+}
