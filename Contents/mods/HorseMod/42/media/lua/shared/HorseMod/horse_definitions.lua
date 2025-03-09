@@ -219,3 +219,27 @@ local filly_sounds = {
 	walkFront = { name = "AnimalFootstepsFawnWalkFront" },
 }
 AnimalDefinitions.animals["filly"].breeds["american_quarter"].sounds = filly_sounds
+
+local AVATAR_DEFINITION = {
+    zoom = -20,
+    xoffset = 0,
+    yoffset = -1,
+    avatarWidth = 180,
+    avatarDir = IsoDirections.SE,
+    trailerDir = IsoDirections.SW,
+    trailerZoom = -20,
+    trailerXoffset = 0,
+    trailerYoffset = 0,
+    hook = true,
+    butcherHookZoom = -20,
+    butcherHookXoffset = 0,
+    butcherHookYoffset = 0,
+    animalPositionSize = 0.6,
+    animalPositionX = 0,
+    animalPositionY = 0.5,
+    animalPositionZ = 0.7
+}
+
+AnimalAvatarDefinition["stallion"] = AVATAR_DEFINITION
+AnimalAvatarDefinition["mare"] = AVATAR_DEFINITION
+AnimalAvatarDefinition["filly"] = AVATAR_DEFINITION

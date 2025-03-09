@@ -1,11 +1,10 @@
-local HorseRiding = require("HorseMod/HorseRiding")
+local HorseUtils  = require("HorseMod/HorseUtils")
 
 ---@param player IsoPlayer
 ---@param context ISContextMenu
 ---@param animal IsoAnimal
 local doHorseInteractionMenu = function(context, player, animal)
-    local animalType = animal:getAnimalType()
-    if animalType ~= "stallion" and animalType ~= "mare" then
+    if not HorseUtils.isHorse(animal) then
         return
     end
 
