@@ -8,6 +8,7 @@
     <m_BlendTime>0.75</m_BlendTime>
 
     <m_SpeedScale>2</m_SpeedScale>
+    <m_Scalar>geneSpeed</m_Scalar>
 
     <m_Conditions>
         <m_Name>isHorse</m_Name>

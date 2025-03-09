@@ -3,4 +3,5 @@ IGUI_EN = {
     IGUI_AnimalType_mare = "Mare",
     IGUI_AnimalType_filly = "Filly",
     IGUI_Breed_american_quarter = "American Quarter",
+    IGUI_Animal_Group_horse = "Horse",
 }

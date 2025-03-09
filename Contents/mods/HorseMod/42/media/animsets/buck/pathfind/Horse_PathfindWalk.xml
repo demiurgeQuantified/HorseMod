@@ -7,6 +7,8 @@
     <m_deferredBoneAxis>Y</m_deferredBoneAxis>
     <m_BlendTime>0.20</m_BlendTime>
 
+    <m_Scalar>geneSpeed</m_Scalar>
+
 	<m_Conditions x_name="792da2e3-d4b2-4501-b779-9bbf08b5b3e6">
 		<m_Name>bMoving</m_Name>
 		<m_Type>BOOL</m_Type>
