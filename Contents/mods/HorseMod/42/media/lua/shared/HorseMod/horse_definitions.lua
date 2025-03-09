@@ -1,4 +1,3 @@
--- TODO: most of the values here are just copied from deer for now
 AnimalDefinitions.stages["horse"] = {
     stages = {
         ["filly"] = {
@@ -68,9 +67,9 @@ AnimalDefinitions.animals["filly"] = {
     animset = "buck", -- i don't think we can add one so we'll have to cheat
     animalSize = 0.1,
     modelscript = "HorseMod.Horse",
-    shadoww = 0.4,
-    shadowfm = 1,
-    shadowbm = 1,
+    shadoww = 1.2,
+    shadowfm = 2.6,
+    shadowbm = 2.5,
     wanderMul = 300,
     breeds = copyTable(AnimalDefinitions.breeds["horse"].breeds),
     stages = AnimalDefinitions.stages["horse"].stages,
@@ -88,7 +87,11 @@ AnimalDefinitions.animals["filly"] = {
     corpseSize = 5,
     minBlood = 200,
     maxBlood = 600,
-    trailerBaseSize = 100
+    trailerBaseSize = 100,
+    eatGrass = true,
+    dontAttackOtherMale = true,
+    ropeBone = "DEF_Head",
+    attackDist = 1
 }
 
 AnimalDefinitions.animals["stallion"] = {
@@ -101,9 +104,9 @@ AnimalDefinitions.animals["stallion"] = {
     modelscript = "HorseMod.Horse",
     bodyModelHeadless = "HorseMod.Horse",
     textureSkinned = "HorseMod/Horse",
-    shadoww = 0.7,
-    shadowfm = 1.5,
-    shadowbm = 1.5,
+    shadoww = 1.2,
+    shadowfm = 2.6,
+    shadowbm = 2.5,
     minSize = 0.85,
     maxSize = 1.2,
     animalSize = 0.3,
@@ -128,7 +131,12 @@ AnimalDefinitions.animals["stallion"] = {
     minBlood = 800,
     maxBlood = 2500,
     male = true,
-    trailerBaseSize = 300
+    trailerBaseSize = 300,
+    eatGrass = true,
+    -- i don't think horses do this...?
+    dontAttackOtherMale = true,
+    ropeBone = "DEF_Head",
+    attackDist = 1
 }
 
 AnimalDefinitions.animals["mare"] = {
@@ -141,9 +149,9 @@ AnimalDefinitions.animals["mare"] = {
     modelscript = "HorseMod.Horse",
     bodyModelHeadless = "HorseMod.Horse",
     textureSkinned = "HorseMod/Horse",
-    shadoww = 0.7,
-    shadowfm = 1.5,
-    shadowbm = 1.5,
+    shadoww = 1.2,
+    shadowfm = 2.6,
+    shadowbm = 2.5,
     minSize = 0.85,
     maxSize = 1.2,
     animalSize = 0.3,
@@ -169,7 +177,11 @@ AnimalDefinitions.animals["mare"] = {
     minBlood = 800,
     maxBlood = 2500,
     female = true,
-    trailerBaseSize = 300
+    trailerBaseSize = 300,
+    eatGrass = true,
+    dontAttackOtherMale = true,
+    ropeBone = "DEF_Head",
+    attackDist = 1
 }
 
 local stallion_sounds = {
