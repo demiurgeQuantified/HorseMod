@@ -18,8 +18,6 @@ AnimalDefinitions.stages["horse"] = {
     }
 }
 
--- TODO: add horse specific genes (speed, carrying capacity if we added carts or something)
--- these are just copied from deer
 AnimalDefinitions.genome["horse"] = {
     genes = {
         ["maxSize"] = "maxSize",
@@ -33,11 +31,15 @@ AnimalDefinitions.genome["horse"] = {
         ["aggressiveness"] = "aggressiveness",
         ["ageToGrow"] = "ageToGrow",
         ["fertility"] = "fertility",
-        ["stress"] = "stress"
+        ["stress"] = "stress",
+        ["speed"] = "speed",
+        ["stamina"] = "stamina",
+        ["carryWeight"] = "carryWeight"
     }
 }
 
 -- TODO: research appropriate horse breeds
+-- breeds should have different forced genes
 AnimalDefinitions.breeds["horse"] = {
     breeds = {
         ["american_quarter"] = {
@@ -56,7 +58,7 @@ AnimalDefinitions.breeds["horse"] = {
     }
 }
 
--- TODO: all of these are just deer copies
+-- TODO: a lot of this is just copied from deer
 
 AnimalDefinitions.animals["filly"] = {
     bodyModel = "HorseMod.Horse",
@@ -67,9 +69,9 @@ AnimalDefinitions.animals["filly"] = {
     animset = "buck", -- i don't think we can add one so we'll have to cheat
     animalSize = 0.1,
     modelscript = "HorseMod.Horse",
-    shadoww = 1.2,
-    shadowfm = 2.6,
-    shadowbm = 2.5,
+    shadoww = 1.5,
+    shadowfm = 4.5,
+    shadowbm = 4.5,
     wanderMul = 300,
     breeds = copyTable(AnimalDefinitions.breeds["horse"].breeds),
     stages = AnimalDefinitions.stages["horse"].stages,
@@ -91,7 +93,16 @@ AnimalDefinitions.animals["filly"] = {
     eatGrass = true,
     dontAttackOtherMale = true,
     ropeBone = "DEF_Head",
-    attackDist = 1
+    attackDist = 2,
+    knockdownAttack = true,
+    attackIfStressed = true,
+    attackBack = true,
+    canBePet = true,
+    collisionSize = 1,
+    baseEncumbrance = 200,
+    -- copied from cow, may need adjustment
+    minWeight = 360,
+    maxWeight = 950
 }
 
 AnimalDefinitions.animals["stallion"] = {
@@ -104,9 +115,9 @@ AnimalDefinitions.animals["stallion"] = {
     modelscript = "HorseMod.Horse",
     bodyModelHeadless = "HorseMod.Horse",
     textureSkinned = "HorseMod/Horse",
-    shadoww = 1.2,
-    shadowfm = 2.6,
-    shadowbm = 2.5,
+    shadoww = 1.5,
+    shadowfm = 4.5,
+    shadowbm = 4.5,
     minSize = 0.85,
     maxSize = 1.2,
     animalSize = 0.3,
@@ -133,10 +144,18 @@ AnimalDefinitions.animals["stallion"] = {
     male = true,
     trailerBaseSize = 300,
     eatGrass = true,
-    -- i don't think horses do this...?
     dontAttackOtherMale = true,
     ropeBone = "DEF_Head",
-    attackDist = 1
+    attackDist = 2,
+    knockdownAttack = true,
+    attackIfStressed = true,
+    attackBack = true,
+    canBePet = true,
+    collisionSize = 1,
+    baseEncumbrance = 200,
+    -- copied from cow, may need adjustment
+    minWeight = 360,
+    maxWeight = 950
 }
 
 AnimalDefinitions.animals["mare"] = {
@@ -149,9 +168,9 @@ AnimalDefinitions.animals["mare"] = {
     modelscript = "HorseMod.Horse",
     bodyModelHeadless = "HorseMod.Horse",
     textureSkinned = "HorseMod/Horse",
-    shadoww = 1.2,
-    shadowfm = 2.6,
-    shadowbm = 2.5,
+    shadoww = 1.5,
+    shadowfm = 4.5,
+    shadowbm = 4.5,
     minSize = 0.85,
     maxSize = 1.2,
     animalSize = 0.3,
@@ -181,7 +200,16 @@ AnimalDefinitions.animals["mare"] = {
     eatGrass = true,
     dontAttackOtherMale = true,
     ropeBone = "DEF_Head",
-    attackDist = 1
+    attackDist = 2,
+    knockdownAttack = true,
+    attackIfStressed = true,
+    attackBack = true,
+    canBePet = true,
+    collisionSize = 1,
+    baseEncumbrance = 200,
+    -- copied from cow, may need adjustment
+    minWeight = 360,
+    maxWeight = 950
 }
 
 local stallion_sounds = {
