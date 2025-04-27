@@ -46,10 +46,10 @@ AnimalDefinitions.breeds["horse"] = {
             name = "american_quarter",
             -- TODO: split these into separate breeds
             -- i didn't do this because i wasn't sure which textures are which breeds
-            texture = "HorseMod/Horse,HorseMod/LAPHorse,HorseMod/GDAPPHorse,HorseMod/APHOVEROHorse,HorseMod/APHHorse",
-            textureMale = "HorseMod/Horse",
-            rottenTexture = "HorseMod/Horse",
-            textureBaby = "HorseMod/Horse",
+            texture = "HorseMod/horse/american_quarter,HorseMod/horse/american_quarter_br,HorseMod/horse/american_quarter_p,HorseMod/horse/american_paint,HorseMod/horse/GBA2,HorseMod/horse/LPA",
+            textureMale = "HorseMod/Horse/american_quarter",
+            rottenTexture = "HorseMod/horse/american_quarter",
+            textureBaby = "HorseMod/horse/american_quarter",
             invIconMale = "Item_DeerMale_Dead",
             invIconFemale = "Item_DeerFemale_Dead",
             invIconBaby = "Item_DeerFawn_Dead",
