@@ -12,9 +12,4 @@
         <m_Type>BOOL</m_Type>
         <m_Value>true</m_Value>
     </m_Conditions>
-
-    <m_Transitions>
-        <m_Target>idleSit</m_Target>
-        <m_AnimName>DeerStag_IdleToSitting</m_AnimName>
-    </m_Transitions>
 </animNode>
