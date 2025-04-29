@@ -9,9 +9,9 @@
     <m_Looped>false</m_Looped>
 
     <m_Conditions>
-		<m_Name>idleAction</m_Name>
-		<m_Type>STRING</m_Type>
-		<m_StringValue>idle1</m_StringValue>
+        <m_Name>idleAction</m_Name>
+        <m_Type>STRING</m_Type>
+        <m_StringValue>idle1</m_StringValue>
 	</m_Conditions>
     <m_Conditions>
         <m_Name>isHorse</m_Name>
@@ -20,8 +20,8 @@
     </m_Conditions>
 
     <m_Events>
-		<m_EventName>idleActionEnd</m_EventName>
-		<m_Time>End</m_Time>
-		<m_ParameterValue></m_ParameterValue>
-	</m_Events>
+        <m_EventName>idleActionEnd</m_EventName>
+        <m_Time>End</m_Time>
+        <m_ParameterValue></m_ParameterValue>
+    </m_Events>
 </animNode>

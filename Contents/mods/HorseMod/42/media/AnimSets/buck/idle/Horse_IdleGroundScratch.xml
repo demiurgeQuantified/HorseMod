@@ -22,6 +22,6 @@
     <m_Events>
 		<m_EventName>idleActionEnd</m_EventName>
 		<m_Time>End</m_Time>
-		<m_ParameterValue></m_ParameterValue>
+	    <m_ParameterValue></m_ParameterValue>
 	</m_Events>
 </animNode>
