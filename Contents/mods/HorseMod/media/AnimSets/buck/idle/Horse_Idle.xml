@@ -2,7 +2,7 @@
 <animNode>
     <m_Name>Horse_Idle</m_Name>
     <m_AnimName>Horse_Idle</m_AnimName>
-    <m_ConditionPriority>10</m_ConditionPriority>
+    <m_ConditionPriority>9</m_ConditionPriority>
 
     <m_deferredBoneAxis>Y</m_deferredBoneAxis>
     <m_BlendTime>0.40</m_BlendTime>
