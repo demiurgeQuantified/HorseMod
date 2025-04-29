@@ -26,4 +26,9 @@
         <m_TimePc>0.31</m_TimePc>
         <m_ParameterValue>run</m_ParameterValue>
     </m_Events>
+
+    <m_Transitions>
+		<m_Target>Horse_Idle</m_Target>
+		<m_AnimName>Horse_GallopToIdle</m_AnimName>
+	</m_Transitions>
 </animNode>
