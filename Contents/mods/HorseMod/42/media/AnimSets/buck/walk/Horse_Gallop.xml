@@ -31,4 +31,9 @@
 		<m_Target>Horse_Idle</m_Target>
 		<m_AnimName>Horse_GallopToIdle</m_AnimName>
 	</m_Transitions>
+
+    <m_Transitions>
+		<m_Target>Horse_Trot</m_Target>
+		<m_AnimName>Horse_GallopToTrot</m_AnimName>
+	</m_Transitions>
 </animNode>
